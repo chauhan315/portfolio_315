@@ -1,8 +1,9 @@
 import smtplib as email
 import ssl
+import os
 
 __USERNAME__ = "ankur2k15ak47@gmail.com"
-__PASSWORD__ = "andtmtedmqzqpjvf"
+__PASSWORD__ = os.getenv("__PASSWORD__")
 
 
 def send_email(message):
